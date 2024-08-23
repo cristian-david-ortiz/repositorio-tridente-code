@@ -1,0 +1,180 @@
+
+body {
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: url('../img/pexels-cesar-galeao-.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.navbar {
+  background-color: #00000050;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.logo{
+  margin-left: 30px;
+}
+.logo a{
+  text-decoration: none;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: rgb(3, 3, 3);
+}
+/* .navbar a.active {
+  background-color: #1a6699;
+  color: white;
+} */
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+h1 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+h2{
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  padding: 0px 70px;
+}
+.content{
+  margin: 100px;
+  background: #352d2dbd;
+  height: 60vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+}
+header.content{
+  padding: 10px 20px;
+  margin: 1000px 100px;
+  height: 90vh;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+p{
+margin-bottom: 40px;
+font-size: 18px;
+color: rgb(235, 224, 224);
+padding: 10px 30px;
+}
+.btn{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #1a6699;
+  color: #ddd;
+  text-decoration: none;
+  background: #1a6699;
+}
+.btn:hover{
+  background: none;
+}
+.btn-home{
+  display: flex;
+}
+.btn-home a{
+  margin: 0px 10px;
+
+}
+
+
+.contentsessiion{
+  
+  height: 50vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #352d2dbd;
+ 
+
+}
+.box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.box-container .box{
+  height: 11rem;
+  width: 17rem;
+  background: #160d0d;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0. 3 5rem rgba(0,0, 0, 5);
+  margin: 2rem;
+}
+.box-container .box i{
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #ddd;
+  background: #1a6699;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.box-container .box p{
+  flex-direction: column;
+  padding:  0px 15px;
+  font-size: 16px;
+}
+.about{
+  background: #352d2dbd;
+}
+.price{
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.contact{
+  padding-top: 20px;
+  background: #352d2dbd;
+  padding-bottom: 10;
+}
+.contain{
+  
+  padding-top: 20px;
+  background: #352d2dbd;
+  padding-bottom: 10 ;
+}

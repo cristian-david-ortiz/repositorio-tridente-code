@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="../Styles/assests.min.css">
+    <title>GYM</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home" class="logo">
+            <img width="50px" height="50px" src="./img/logo.png" />
+        </a>
+        <div class="nav-items">
+            <a href="#home" class="active" onclick="setActive(this);">Inicio</a>
+            <a href="#services" onclick="setActive(this);">Servicios</a>
+            <a href="Cerrar Sesion" onclick="setActive(this);">Acerca de</a>
+            <a href="./cerrar.php">Cerrar Sesion</a>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Aquí va el contenido de tu página -->
+        <h1>Bienvenido a mi sitio web</h1>
+    </div>
+</body>
+
+<script>
+    function setActive(element) {
+        // Eliminar la clase 'active' de todos los elementos
+        var links = document.querySelectorAll('.nav-items a');
+        links.forEach(function (link) {
+            link.classList.remove('active');
+        });
+
+        // Añadir la clase 'active' al elemento clicado
+        element.classList.add('active');
+    }
+</script>
+
+</html>
