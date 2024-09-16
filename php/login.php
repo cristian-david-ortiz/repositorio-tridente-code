@@ -19,21 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['nombre'] = $correo['nombre'];
         }
     }
-    // //RECORRER LA SEGUNDA TABLA
-    // if (!$login) {
-    //     //segunda consulta de la tabla de admins
-    //     $sql2 = "SELECT * FROM admins WHERE correo = '$correo'";
-    //     $prepar2 = $conexion->prepare($sql2);
-    //     $prepar2->execute();
-    //     foreach ($prepar2 as $admin) {
-    //         if (password_verify($contrasena, $admin['contraseña'])) {
-    //             $_SESSION['nombre'] = $admin['nombre'];
-    //             header('Location:./admin.php');
-    //         }
-    //     }
-    // }
+
+
     if ($login) {
-        header('Location: ../html/practica.php');
+        header('Location: ../html/tabla.php');
     } else {
         echo "No existe en la BD";
         echo "<br>";
